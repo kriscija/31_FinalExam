@@ -2,9 +2,9 @@
 Final exam, problem 5.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  May 2018.
+         their colleagues and Joe Krisciunas.  May 2018.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DoneTODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -103,6 +103,15 @@ def run_test_problem5():
 
 
 def problem5(m, numbers1, numbers2):
+    list = []
+    for k in range(len(numbers1)):
+        test = numbers1[k]
+        test2 = numbers2[k]
+        if test*m == test2:
+            list = list + [test] + [test2]
+            return list
+    return list
+
     """
     What comes in:
        -- An integer m
@@ -136,7 +145,7 @@ def problem5(m, numbers1, numbers2):
       :type [str]
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DoneTODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
