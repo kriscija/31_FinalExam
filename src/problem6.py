@@ -57,7 +57,7 @@ def shape(n):
 
     ####################################################################
     # IMPORTANT: In solving this problem,
-    #   You must NOT use string multiplication.
+    #   You must NOT use string multiplication. ok
     ####################################################################
     """
     Prints a shape with numbers on the left side of the shape,
