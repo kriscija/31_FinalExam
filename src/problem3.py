@@ -4,7 +4,7 @@ Final exam, problem 3.
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
          their colleagues and PUT_YOUR_NAME_HERE.  May 2018.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DoneTODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 import time
@@ -58,6 +58,24 @@ def run_test_problem3():
 
 
 def problem3(point, circle1, circle2, window):
+    point.attach_to(window)
+    circle1.attach_to(window)
+    circle2.attach_to(window)
+    circle1cent = circle1.center
+    circle2cent = circle2.center
+    line1 = rg.Line(point,circle1cent)
+    line1.color = circle1.fill_color
+    line1.attach_to(window)
+    line2 = rg.Line(circle1cent,circle2cent)
+    line2.color = circle1.fill_color
+    line2.attach_to(window)
+    line3 = rg.Line(circle2cent,point)
+    line3.color = circle1.fill_color
+    line3.attach_to(window)
+    line1midpoint = line1.get_midpoint()
+    line2midpoint = line2.get_midpoint()
+    line3midpoint = line3.get_midpoint()
+
     """
     See   problem3_picture.pdf   in this project for pictures
     that may help you better understand the following specification:

@@ -2,9 +2,9 @@
 Final exam, problem 1.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  May 2018.
+         their colleagues and Joe Krisciunas.  May 2018.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DoneTODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -19,7 +19,7 @@ def main():
     print()
     print('Un-comment the calls in MAIN one by one')
     print(' to run the testing code as you complete the TODOs.')
-    # run_test_problem1a()
+    run_test_problem1a()
     # run_test_problem1b()
 
 
@@ -73,6 +73,14 @@ def run_test_problem1a():
 
 
 def problem1a(numbers):
+    fin = len(numbers)
+    print fin
+    #mid =  len(numbers) //2 + 1
+
+
+    #sum = numbers[0]+numbers[fin]+numbers[mid]
+    #return sum
+
     """
     What comes in:
       -- A sequence of numbers, with the sequence having a length
@@ -148,6 +156,9 @@ def run_test_problem1b():
 
 
 def problem1b(numbers):
+    initia = len(numbers)//3
+
+
     """
     What comes in:
       -- A non-empty sequence of numbers, with the sequence having a length
