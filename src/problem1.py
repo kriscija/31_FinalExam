@@ -73,13 +73,14 @@ def run_test_problem1a():
 
 
 def problem1a(numbers):
-    fin = len(numbers)
-    print fin
-    #mid =  len(numbers) //2 + 1
+    fin = len(numbers)-1
+
+    mid =  len(numbers) //2
 
 
-    #sum = numbers[0]+numbers[fin]+numbers[mid]
-    #return sum
+
+    sum = numbers[0]+numbers[fin]+numbers[mid]
+    return sum
 
     """
     What comes in:
@@ -98,7 +99,7 @@ def problem1a(numbers):
       :type numbers:  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DoneTODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
