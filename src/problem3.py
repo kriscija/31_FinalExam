@@ -75,6 +75,16 @@ def problem3(point, circle1, circle2, window):
     line1midpoint = line1.get_midpoint()
     line2midpoint = line2.get_midpoint()
     line3midpoint = line3.get_midpoint()
+    line4 = rg.Line(line1midpoint,line2midpoint)
+    line4.color = circle2.fill_color
+    line4.attach_to(window)
+    line5 = rg.Line(line2midpoint,line3midpoint)
+    line5.color = circle2.fill_color
+    line5.attach_to(window)
+    line6 = rg.Line(line3midpoint,line1midpoint)
+    line6.color = circle2.fill_color
+    line6.attach_to(window)
+    window.render()
 
     """
     See   problem3_picture.pdf   in this project for pictures
