@@ -19,8 +19,8 @@ def main():
     print()
     print('Un-comment the calls in MAIN one by one')
     print(' to run the testing code as you complete the TODOs.')
-    #run_test_problem1a()
-    #run_test_problem1b()
+    run_test_problem1a()
+    run_test_problem1b()
 
 
 def run_test_problem1a():

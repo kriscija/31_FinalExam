@@ -37,13 +37,20 @@ def shape(n):
     for j in range(n-1-x):
           print(' ', end='')
     for h in range(1+x):
+        if h+1 <= 9:
             print(h+1,end='')
+        else:
+            print(h-9,end='')
     print(' ',end='')
     for g in range(2+x):
             print('*',end='')
     print(' ',end='')
     for s in range(n - x, 0, -1):
-        print(s, end='')
+        if s <= 9:
+            print(s, end='')
+        else:
+            print(s-10,end='')
+
     print()
     x = x + 1
 
@@ -91,7 +98,7 @@ And this one for n=14:
     :type n: int
     """
     # ------------------------------------------------------------------
-    # TODO: Implement and test this function.
+    # DoneTODO: Implement and test this function.
     #          Some tests are already written for you (above).
     ####################################################################
     # IMPORTANT: In solving this problem,
